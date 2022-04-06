@@ -1,0 +1,75 @@
+*{
+   transition: all 0.5s;
+}
+body{
+    
+    background-color:rgb(225, 239, 21);
+}
+/*area de las preguntas*/
+header{
+    color: #f8f8f8;
+    background:url("img/iglesia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(26, 204, 204);
+    height: 240px;
+    margin: auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 20px;
+    border: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+/*area de respuestas*/
+button{
+    border-radius: 20px;
+    width: 45%;
+    height: 100px;
+    background-color:#7FFF00 ;
+
+}
+button:hover{
+background: rgba(0, 242, 255 );
+cursor: pointer;
+transform: scale(1.05);
+}
+.contenedor_de_respuestas{
+   height:500px;
+   padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-wrap: wrap;
+   
+}
+/*contenedor de la ventana*/
+.contenedor_de_ventana{
+    background:rgba(0, 0, 0,.3);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+/*clase que activamos con js*/
+.contenedor_de_ventana.active{
+    visibility: visible;
+}
+ 
+
+.contenedor_de_ventana div {
+background-color: #f8f8f8;
+font-family: fantasy;
+box-shadow: 0px,0px,5px,0px rgba(0, 0, 0,0.3);
+width: 600px;
+text-align: center;
+padding: 20px;
+border-radius: 10px;
+}
+
