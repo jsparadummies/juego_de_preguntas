@@ -1,0 +1,28 @@
+*{
+    background-color: rgb(18, 240, 89);
+}
+.titulo{
+    color: white;
+    font-family: cursive;
+    text-align: center;
+    font-size: 50px;
+}
+.padre_boton{
+   
+    height: 550px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.boton_inicio {
+    display: block;
+    width: 300px;
+    height: auto;
+    background-color: blue;
+    border-radius: 20px;
+}
+.boton_inicio h1{
+background-color: blue;
+}
