@@ -3,18 +3,19 @@
 }
 body{
     
-    background-color:rgb(172, 183, 24);
+    background-color:#8173BA;
 }
 /*area de las preguntas*/
 header{
     color: #f8f8f8;
-    background:url("img/iglesia.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     background-color: rgb(26, 204, 204);
+    background-image: linear-gradient(to right,blue,red);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     height: 240px;
     margin: auto;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: fantasy;
     border-radius: 20px;
     border: solid;
     display: flex;
@@ -23,16 +24,17 @@ header{
 }
 /*area de respuestas*/
 button{
+    font-family: fantasy;
     border-radius: 20px;
     width: 45%;
     height: 100px;
-    background-color:#7FFF00 ;
+    background-color:#18E7BF ;
 
 }
 button:hover{
-background: rgba(0, 242, 255 );
+background:yellow;
 cursor: pointer;
-transform: scale(1.05);
+transform: scale(1.05, 1.05);
 }
 .contenedor_de_respuestas{
    height:500px;
@@ -72,4 +74,3 @@ text-align: center;
 padding: 20px;
 border-radius: 10px;
 }
-
