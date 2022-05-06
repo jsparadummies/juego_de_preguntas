@@ -8,11 +8,15 @@
     <title>Document</title>
 </head>
 <body>
+
     <header>
-        
+
+        <!--aqui van las preguntas-->
         <h1 class="primera_pregunta">¿Qué evento internacional fue inaugurado por el sermón del Papa Urbano II en Clermont en 1095?</h1>
     
     </header>
+
+    <!--aqui van los botones-->
     <div id="contenedor_de_respuestas" class="contenedor_de_respuestas">
         
         <button type="button" name="boton_1"id="boton_1" class="boton_1"><h3>La primera cruzada</h3></button>
@@ -20,15 +24,46 @@
         <button type="button" id="boton_3" class="boton_3"><h3>El gran cisma</h3></button>
         <button type="button" id="boton_4" class="boton_4"><h3>La Guerra de los Cien Años</h3></button>
     </div>
-
+    
+    <!--modal al presionar alguna respuesta-->
     <div class="contenedor_de_ventana " id="contenedor_de_ventana">
-
     <div class="ventana">
         <h1 >¿estas seguro?</h1>
-        <button><h3>si</h3></button>
-        <button><h3>no</h3></button>
+        <button id="btnsi"><h3>si</h3></button>
+        <button id="btn_no"><h3>no</h3></button>
+    </div>
     </div>
 
+
+    <!-- modal para ganador -->
+    <div class="padre-de-modal" id="padre-de-modal">
+    <div class="modal-ganador">
+
+        <h1>ganastes</h1>
+        <div class="btn-win">
+        <button id="btn-next">
+            <h2><a href="./portada.html">inicio</a></h2>
+        </button>
+        <button id="btn-replay">
+            <h2><a href="./index.html"><h2>replay</h2></a></h2>
+        </button>
+        </div>
+    </div>
+
+<!--modal de perdedor-->
+    <div class="padre-de-modal-no" id="padre-de-modal-no">
+        <div class="modal-perdedor">
+    
+            <h1>perdistes</h1>
+            <div class="btn-win">
+            <button id="btn-next">
+                <h2><a href="./portada.html">inicio</a></h2>
+            </button>
+            <button id="btn-replay">
+                <h2><a href="./index.html"><h2>replay</h2></a></h2>
+            </button>
+            </div>
+        </div>
     </div>
 </body>
     <script src="logica.js"></script>
